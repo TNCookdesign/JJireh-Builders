@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>J Jireh Web Style Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600" rel="stylesheet">
+
+<!-- Bootstrap core CSS -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+
+</head>
+<style type="text/css">
+body {
+	color: #9EAAB3
+}
+body, html {
+	font-family: 'Oswald', sans-serif;
+}
+h1 {
+	font-size: 3em;
+	color: #27323D;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 2.4em;
+	color: #27323D;
+	margin-bottom: 20px;
+}
+h3 {
+	font-size: 2em;
+	color: #27323D;
+	margin-bottom: 20px;
+}
+h4 {
+	font-size: 1.7em;
+	color: #27323D;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 1.25em;
+	margin-top: 20px;
+}
+a {
+	color: #006092
+}
+a:hover {
+	color: #008AD2
+}
+.textsm {
+	font-size: 1.1em
+}
+.textxs {
+	font-size: 0.875em
+}
+b {
+	color: #27323D;
+}
+.fa {
+	margin-right: 7px
+}
+.light {
+	color: #999
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+li {
+	font-size: 1.1em;
+	margin-bottom: 10px
+}
+.btn, .dropdown-menu, .alert {
+	border-radius: 0px;
+}
+.btn {
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
+.btn-default {
+	color: #27323D;
+	background-color: #fff;
+	border-color: #9EAAB3
+}
+.btn-default:hover {
+	color: #fff;
+	background-color: #9EAAB3;
+	border-color: #9EAAB3
+}
+.btn-primary {
+	background-color: #9d0a0e;
+	border-color: #9d0a0e;
+}
+.btn-primary:hover {
+	color: #9D0A0E;
+	background-color: rgba(255,255,255, 0.3);
+	border-color: #9D0A0E
+}
+.btn-info {
+	color: #9D0A0E;
+	background-color: rgba(255,255,255, 0.3);
+	border-color: #9D0A0E
+}
+.btn-info:hover {
+	background-color: #9D0A0E;
+	border-color: #9D0A0E;
+	color: #fff
+}
+.btn-action {
+	background-color: rgba(212,224,234, 0.3);
+	border-color: #9EAAB3;
+	color: #27323D
+}
+.btn-action:hover {
+	background-color: #27323D;
+	border-color: #9EAAB3;
+	color: #fff
+}
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+.palette {
+	margin-bottom: 10px;
+	width: 100%;
+}
+.swatch {
+	float: left;
+	padding: 5px 10px;
+	height: 75px;
+}
+.siteBlue {
+	background-color: #002E46
+}
+.siteBlue70 {
+	background-color: #006092
+}
+.siteBlue50 {
+	background-color: #008AD2
+}
+.highlightRed {
+	background-color: #9D0A0E
+}
+.highlightRed70 {
+	background-color: #AA0B0F
+}
+.highlightRed50 {
+	background-color: #E90F15
+}
+.dkgray {
+	background-color: #27323D
+}
+.dkgray70 {
+	background-color: #9EAAB3
+}
+.ltgray {
+	background-color: #D4E0EA
+}
+.palette2 p {
+	padding: 15px 10px;
+	color: #ffffff;
+	margin: 0
+}
+img.partner {
+	filter: grayscale(100%);
+	opacity: .6;
+}
+.nav-bg {
+	background:
+				/* top, transparent red, faked with gradient */ 
+    linear-gradient(  rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.4)  ),     /* bottom, image */
+				url(https://static.pexels.com/photos/279315/pexels-photo-279315.jpeg);
+	background-position: center;
+	filter: blur(2%);
+	height: 200px;
+	margin-top: -100px;
+}
+.nav {
+	background: rgba(0,46,70, 0.25);
+	width: 100%;
+	height: 100px;
+	padding: 40px 20px 20px 20px;
+}
+.nav a {
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.nav-pills {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 10px 20px;
+	border-radius: 0;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color: white;
+	background-color: #9D0A0E;
+	border-radius: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-bottom: none;
+}
+.nav-pills > li > a:hover {
+	color: #ffffff;
+	background-color: rgba(255,255,255, 0.0);
+	border-bottom: thick solid #9D0A0E;
+	border-radius: 0px;
+}
+.home-news-header, .department-news-header, .sidebar-header {
+	color: #335576 !important;
+	border-bottom: 2px solid #695e4a;
+	padding-bottom: 10px;
+}
+.home-news-header > a, .department-news-header > a, .sidebar-header > a {
+	color: #335576 !important;
+}
+.home-news-header span.archive-link a, .department-news-header span.archive-link a, .home-news-header span.archive-link span a, .department-news-header span.archive-link span a {
+	color: #335576 !important;
+}
+.header-search-span {
+	float: right;
+	width: 250px;
+	display: inline-block;
+	margin-top: 10px;
+}
+.header-search {
+	width: 230px;
+	position: relative;
+	float: left;
+}
+.header-search input {
+	position: absolute;
+	width: 0px;
+	float: Left;
+	margin-left: 210px;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+	border-radius: 0;
+	padding: 0 10px 0 2px;
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+}
+.header-search:hover input, .header-search input:focus {
+	width: 200px;
+	margin-left: 0px;
+	color: #27323D;
+	font-weight: normal;
+	background: rgba(255, 255, 255,.8);
+}
+ .header-search input::placeholder {
+ color: #9D0A0E;
+ font-weight: normal;
+}
+.btn-srch {
+	position: absolute;
+	right: 0;
+	top: 4px;
+	border: 0;
+	background: transparent;
+}
+.header {
+	background: #002E46;
+	color: #fff;
+	padding: 10px 20px 10px;
+}
+.header li {
+	display: inline;
+	padding: 20px;
+}
+.header a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	z-index: 2;
+}
+</style>
+
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" style="margin-top:20px">
+      <h2>J Jireh Web Style Guide</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Primary Colors</h3>
+      <p>Themes available here: <a href="https://color.adobe.com/J-Jireh-Blue-Shades-color-theme-9919528/">Primary</a>, <a href="https://color.adobe.com/JJireh-Red-Shades-color-theme-9920408/">Highlight </a>, <a href="https://color.adobe.com/J-Jireh-color-theme-9906570/">Main Colors </a>.</p>
+      <div class="row palette2">
+        <div class="col-md-6">
+          <h5>Primary (links)</h5>
+          <p style="background-color:#002E46;">#002E46</p>
+          <p style="background-color:#006092;">#006092</p>
+          <p style="background-color:#008AD2;">#A0D640</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Highlight </h5>
+          <p style="background-color:#9D0A0E;">#9D0A0E</p>
+          <p style="background-color:#AA0B0F;">#AA0B0F</p>
+          <p style="background-color:#E90F15;">#E90F15</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row palette2">
+        <div class="col-md-12">
+          <h5>Text </h5>
+          <p style="background-color:#27323D;">#27323D</p>
+          <p style="background-color:#9EAAB3;">#9EAAB3</p>
+          <p style="background-color:#D4E0EA;">#D4E0EA</p>
+        </div>
+        <!--<div class="col-md-3">
+        <h5>Errors and alerts</h5>
+        <p style="background-color:#d02226;">#d02226</p>
+        <p style="background-color:#de6568;">#de6568</p>
+        <p style="background-color:#e89193; color:#333333">#e89193</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Callout Boxes</h5>
+        <p style="background-color:#DAD8D6;">#DAD8D6</p>
+        <p style="background-color:#E5E4E2;">#E5E4E2</p>
+        <p style="background-color:#EDECEB; color:#333333">#EDECEB</p>
+      </div>--> 
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6" >
+      <h3>Typography</h3>
+      <!-- <p class="light">BizBuySell uses CoStarBrown, a custom designed typeface for CoStar Group and its sub-brands.</p> -->
+      <h1>H1 Header One</h1>
+      <h2>H2 Header Two</h2>
+      <h3>H3 Header Three</h3>
+      <h4>H4 Header Four</h4>
+      <p><b>Paragraph Text</b><br>
+        This site uses the Google font Oswald in 300, 400 and 600 weights. the standard text size is 1.25em and color is #63666a. Bold and header text is slightly darker &mdash; using #4b4d50.</p>
+      <p class="textsm"><b>Small</b> text size is 1.1em. It can be used as secondary or sidebar body copy, detailed information or <a href="#">links</a>.</p>
+      <p class="textxs"><b>X-small</b> text size is 0.875em and should be used sparingly.</p>
+      <hr>
+      <h3>Common Icons</h3>
+      <p>More available at <a href="http://fontawesome.io/icons/">fontawesome.io</a>.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Global Icons</h4>
+          <ul>
+            <li><i class="fa fa-heart-o"></i>Save</li>
+            <li><i class="fa fa-envelope-o"></i>Email</li>
+            <li><i class="fa fa-upload"></i>Upload</li>
+            <li><i class="fa fa-eye"></i>View</li>
+            <li><i class="fa fa-phone"></i>Contact</li>
+            <li><i class="fa fa-map-marker"></i>Location</li>
+          </ul>
+        </div>
+        <div class="col-md-6 siteBlue" style="color: #fff">
+          <h4 style="color: #fff;">Navigation Icons</h4>
+          <ul>
+            <li><i class="fa fa-bars"></i>Navbars</li>
+            <li><i class="fa fa-times"></i>Close</li>
+            <li><i class="fa fa-angle-left"></i>Left</li>
+            <li><i class="fa fa-angle-right"></i>Right</li>
+            <li><i class="fa fa-facebook-square"></i>Facebook</li>
+            <li><i class="fa fa-twitter-square"></i>Twitter</li>
+            <li><i class="fa fa-google-plus-square"></i>Google Plus</li>
+          </ul>
+        </div>
+      </div>
+      <h3 style="padding-bottom: 10px">Navigation</h3>
+      <span class="textsm">Navigation menu</span>
+      <div class="container-fluid header">
+        <ul>
+          <li><i class="fa fa-map-marker"></i> P.O. Box 397, Yucapi, CA 92399</li>
+          <li><a href="#"><i class="fa fa-phone"></i> 909-948-8314</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <!--<li><a href="storm.html">Storm Drain Structures</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="quote.html">Request a Quote</a></li>--> 
+            <span class="archive-link pull-right header-search-span"> <span class="header-search">
+            <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+            <a href="#link" role="button" class="btn-srch"><i class="fa fa-search"></i></a> </span> </span>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-bg"></div>
+      
+      <!--  <span class="textsm">General dropdown menu</span>
+        <div class="row" style="margin: 10px 0 20px 0">
+            
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Other Search Types" aria-expanded="true"><span class="filter-option pull-left">Button with menu</span>&nbsp;<span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+                
+            </div>-->
+      
+      <hr>
+      <h3>Buttons</h3>
+      <!-- <p class="light">BizBuySell colors have been applied to Bootstrap buttons.</p> -->
+      <div style="padding: 10px 0">
+        <button type="button" style="margin-right:5px" class="btn btn-default">Default Button</button>
+        <button type="button" style="margin-right:5px" class="btn btn-primary">Primary Button</button>
+        <button type="button" style="margin-right:5px" class="btn btn-info">Secondary Button</button>
+      </div>
+      <div style="padding: 10px 0">
+        <button type="button" style="margin-right:5px" class="btn btn-default btn-sm">Learn More</button>
+        <button type="button" style="margin-right:5px" class="btn btn-primary btn-sm">Learn More</button>
+        <button type="button" style="margin-right:5px" class="btn btn-info btn-sm">Learn More</button>
+      </div>
+      <p class="textsm">Add the bootstrap "btn-lg" or "btn-sm" class to size buttons appropriately for the content area.</p>
+      <!--<p class="textsm">Some buttons change state when files have been captured for upload. This tells the user they have another action to complete the process.</p>
+            <button style="margin: 10px 7px 0 0" type="button" style="margin-right:5px" class="btn btn-action"><i class="fa fa-upload"></i> Upload</button>
+        <button style="margin-top: 10px" type="button" class="btn btn-default"> <i class="fa fa-close "></i> Cancel</button>--> 
+      
+    </div>
+    <div class="col-md-6">
+      <h3>Most common colors</h3>
+      <span class="textsm">Primary</span>
+      <div class="palette">
+        <div style="width: 50%; color:#fff" class="swatch siteBlue">#002E46</div>
+        <div style="width: 25%; color:#fff" class="swatch siteBlue70">#92C44C</div>
+        <div style="width: 25%; color:#fff" class="swatch siteBlue50">#C2DC97</div>
+        <br style="clear: left;" />
+      </div>
+      <span class="textsm">Highlight</span>
+      <div class="palette">
+        <div style="width: 50%; color:#fff" class="swatch highlightRed">#96C93C</div>
+        <div style="width: 25%; color:#fff" class="swatch highlightRed70">#4DA7D9</div>
+        <div style="width: 25%; color:#fff" class="swatch highlightRed50">#80C0E4</div>
+        <br style="clear: left;" />
+      </div>
+      <span class="textsm">Text</span>
+      <div style="margin-bottom:30px;" class="palette">
+        <div style="width: 50%; color:#fff" class="swatch dkgray">#63666a</div>
+        <div style="width: 25%; color:#fff" class="swatch dkgray70">#929497</div>
+        <div style="width: 25%; color:#fff" class="swatch ltgray">#B1B3B5</div>
+        <br style="clear: left;" />
+      </div>
+      <hr>
+      <h3>Logos</h3>
+      <p>This section will be added once logos are approved.</p>
+      <div class="row">
+        <div class="col-md-6"> <img style="margin-top: 18px" src="logo.png"> </div>
+        <div class="col-md-6"> 
+          <!--<p class="textsm">Web (96 ppi) &ndash; <a href=".jpg" alt="" download >JPEG</a>, <a href=".png" alt="" download >PNG</a>, <a href=".gif" alt="" download >GIF</a>
+                    <br>Print (300 dpi) &ndash; <a href="logo-color-4C.eps" alt="" download >CMYK</a>, <a href="logo-PMS-299C.eps" alt="" download >PMS</a>, <a href="logo-reverse.eps" alt="" download >White</a></p>--> 
+        </div>
+      </div>
+      <p><b>Other company logos</b>
+      <p>Use of other company logos on the website or in emails requires adjustments to avoid conflicting with the main brand.</p>
+      <p>A CSS class of ".partner" will automatically apply grayscale and opacity effects. To replicate this in Photoshop add a hue/saturation adjustment layer &ndash; reduce the saturation to -100 and increase the lightness to +35.</p>
+      <div class="row">
+        <div class="col-md-12"> <img style="margin-bottom: 20px; max-width: 40%" src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/Microsoft-Logo-PNG.png" class="partner"> <img style="margin-bottom: 20px; max-width: 40%" src="https://blog.and.co/wp-content/uploads/2016/10/Invision.png" class="partner"> <img style="max-width: 40%" src="https://upload.wikimedia.org/wikipedia/commons/4/42/WebMD_logo.png" class="partner"> <img style="max-width: 40%" src="https://cdn3.vox-cdn.com/uploads/chorus_asset/file/6466217/fixed-google-logo-font.png" class="partner"> </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="margin-top:20px">
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
