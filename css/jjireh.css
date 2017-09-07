@@ -5,12 +5,14 @@ body {
 	background-color: #f8fafb !important;
 	letter-spacing:.2rem;
 	min-height: 100vh;
+	width: 100%;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
+	overflow-x: hidden;
 }
 
 body, html {
@@ -38,11 +40,18 @@ h4 {
 	color: #27323D;
 	margin-bottom: 20px;
 }
-p {
+h5 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 300;
 	margin-top: 20px;
+	color: #9EAAB3;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	margin-top: 10px;
 	color: #9EAAB3;
 }
 a {
@@ -79,6 +88,9 @@ li {
 	border-color: #cecece;
 	margin-top: 20px;
 }
+
+/*Button*/
+
 .btn, .dropdown-menu, .alert {
 	border-radius: 0px;
 }
@@ -184,9 +196,12 @@ img.partner {
 	filter: grayscale(100%);
 	opacity: .6;
 }
+
+/*Banners*/
+
 .home-bg {
 	background:
-				/* top, transparent red, faked with gradient */ 
+				/* top, transparent red, faked with gradient */
     linear-gradient(  rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)  ),     /* bottom, image */
 				url(../images/jjireh_bg.jpg) no-repeat;
 	background-position: center;
@@ -202,7 +217,7 @@ height: 730px;
 }
 .about-bg {
 	background:
-				/* top, transparent red, faked with gradient */ 
+				/* top, transparent red, faked with gradient */
     linear-gradient(  rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)  ),     /* bottom, image */
 				url(../images/aboutus_bg.jpg) no-repeat;
 	background-position: center;
@@ -219,7 +234,7 @@ height: 730px;
 
 .employ-bg {
 	background:
-				/* top, transparent red, faked with gradient */ 
+				/* top, transparent red, faked with gradient */
     linear-gradient(  rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)  ),     /* bottom, image */
 				url(../images/employ_bg.jpg) no-repeat;
 	background-position: center;
@@ -236,7 +251,7 @@ height: 730px;
 
 .storm-bg {
 	background:
-				/* top, transparent red, faked with gradient */ 
+				/* top, transparent red, faked with gradient */
     linear-gradient(  rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)  ),     /* bottom, image */
 				url(../images/storm_bg.jpg) no-repeat;
 	background-position: center;
@@ -253,7 +268,7 @@ height: 730px;
 
 .portfolio-bg {
 	background:
-				/* top, transparent red, faked with gradient */ 
+				/* top, transparent red, faked with gradient */
     linear-gradient(  rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)  ),     /* bottom, image */
 				url(../images/portfolio_bg.jpg) no-repeat;
 	background-position: center;
@@ -269,7 +284,7 @@ height: 346px;
 }
 .quote-bg {
 	background:
-				/* top, transparent red, faked with gradient */ 
+				/* top, transparent red, faked with gradient */
     linear-gradient(  rgba(255, 255, 255, 0.2),  rgba(255, 255, 255, 0.2)  ),     /* bottom, image */
 				url(../images/quote_bg.jpg) no-repeat;
 	background-position: center;
@@ -283,6 +298,8 @@ height: 730px;
 	color:#fff;
 	padding-top: 15%;
 }
+
+/*Request Form*/
 
 .requestquote {
 	background: url(../images/request_bg.jpg) no-repeat;
@@ -306,7 +323,7 @@ height: 730px;
 .cd-submit {
 	margin-top: -4px;
 }
- 
+
 .cd-email {
 	background: rgba(0, 0, 0, 0.6) ;
 	border: thin solid #9EAAB3;
@@ -351,10 +368,14 @@ height: 730px;
 	margin-top: -4px;
 }
 
-.em-radio {
-	margin-left: 20px;
+input[type="radio"] {
+	margin: 0px 4px 0px 10px;
 }
- 
+
+input[type="radio"]:checked:after {
+    background-color: #9D0A0E;
+}
+
 .em-input {
 	background: rgba(255, 255, 255, 0.6) ;
 	border: thin solid #D4E0EA;
@@ -372,11 +393,9 @@ height: 730px;
 #em-unit, #em-city, #em-state, #em-zip {
 	width: 49% !important;
 }
-#em-when {
-	width: 80%;
-}
+
 #em-explain {
-	width: 78%;
+	
 }
 #em-message {
 	min-height: 200px;
@@ -405,14 +424,15 @@ height: 730px;
 	padding: 0;
 }
 
+/*Gallery*/
+
 .gallery {
 	background: #ffffff;
 	padding: 40px 0px 0px;
 	margin-top: -20px;
+	
 }
-.gallery row {
-	height: 400px;
-}
+
 .gallery h4 {
 	padding-top: 20px;
 	padding-bottom: 40px;
@@ -420,9 +440,11 @@ height: 730px;
 
 .gallery img {
 	width: 100%;
-	margin: auto 0;
-	padding: 0;
+	height: auto;
+	border: thin solid #fff;
 }
+
+/*Team*/
 
 .team {
 	padding: 40px 8% 0px;
@@ -443,8 +465,10 @@ height: 730px;
 	margin: 20px 0px -18px;
 }
 
+/*Structures*/
+
 .structures {
-	padding: 40px 0px 0px;
+	margin-top: 20px;
 	color: #cecece;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -454,6 +478,9 @@ height: 730px;
 }
 .structures img {
 	border: thick solid #cecece;
+	margin-top: 40px;
+	max-width: 400px;
+	width: 100%;
 }
 .structures h4 {
 	color: #616b74;
@@ -461,6 +488,8 @@ height: 730px;
 	font-family: 'Open Sans', sans-serif;
 	margin: 20px 0px -18px;
 }
+
+/*Footer*/
 
 footer {
 	background: #002E46;
@@ -482,6 +511,7 @@ footer li a {
 .sub-active {
 	color: #fff;
 	font-weight: 400;
+	text-decoration: underline;
 }
 footer li strong {
 	color: #fff;
@@ -493,28 +523,63 @@ footer li strong {
 	text-align: center;
 }
 
+/*Media Queries*/
+
 @media (max-width:1550px) {
-	.home-bg {	
+	.home-bg {
 		padding-top: 25%;
 }
 }
 @media (max-width:768px) {
-	.home-bg {	
+	.home-bg {
 height: 100vh;
 		min-height: 730px;
 		padding-top: 40%;
 }
+	.about-bg {
+	background-position: right top;
+height: 346px;
+}
+
+.employ-bg {
+	background-position: right top;
+height: 346px;
+}
+
+.storm-bg {
+	background-position: right top;
+height: 346px;
+}
+
+.portfolio-bg {
+	background-position: right top;
+height: 346px;
+}
+.quote-bg {
+	background-position: right top;
+height: 346px;
+}
+
 	.cd-email {
   width: 100%;
 }
 	.cd-submit {
 	margin-top: 20px;
 }
+	#em-unit, #em-city, #em-state, #em-zip {
+	width: 100% !important;
+}
 	footer .col-xs-12 {
 	text-align: center;
 }
 }
 
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .row.no-gutters {
   margin-right: 0;
